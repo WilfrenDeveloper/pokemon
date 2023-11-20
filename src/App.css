@@ -1,0 +1,7 @@
+
+.app__container{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    min-width: 100vw;
+}
