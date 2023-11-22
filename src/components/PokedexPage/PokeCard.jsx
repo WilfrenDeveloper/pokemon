@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import useFetch from '../../hooks/userFetch'
 import { useNavigate } from 'react-router-dom'
+import '../../styles/PokeCard.css'
 
 const PokeCard = ({url}) => {
     const [infoPoke, getInfoPoke]=useFetch(url)
@@ -13,30 +14,31 @@ const PokeCard = ({url}) => {
     const handleNavigate =()=> {
         navigate(`/pokedex/${infoPoke.id}`)
     }
-    
-    console.log(infoPoke);
+
+    const typePoke = infoPoke?.types[0].type.name
+  
 
   return (
-    <article className='pokecard__article' onClick={handleNavigate}>
-        <header className='pokecard__header'>
+    <article className={`pokecard__article article__${typePoke}`} onClick={handleNavigate}>
+        <header className={`pokecard__header header__${typePoke}`}>
             <img className='pokecard__img' src={infoPoke?.sprites.other["official-artwork"].front_default} alt="" />
         </header>
         <section className='pokecard__section'>
-            <h3 className='pokecard__h3'>{infoPoke?.name}</h3>
-            <ul className='pokecard__ul'>
+            <h3 className={`pokecard__h3 text__${typePoke}`}>{infoPoke?.name}</h3>
+            <ul className='pokecard__ul--type'>
                 {
                     infoPoke?.types.map(infoType=>(
-                        <li className='pokecard__li' key={infoType.type.url}>{infoType.type.name}</li>
+                        <li className='pokecard__li--type' key={infoType.type.url}>{infoType.type.name}</li>
                     ))
                 }
             </ul>
-            <hr />
-            <ul className='pokecard__ul'>
+            <p className='pokecard__p'>type</p>
+            <ul className='pokecard__ul--stats'>
                 {
                     infoPoke?.stats.map(infoStat=>(
-                        <li className='pokecard__li' key={infoStat.stat.url}>
-                            <span className='pokecard__span'>{infoStat.stat.name} </span>
-                            <span className='pokecard__span'>{infoStat.base_stat}</span>
+                        <li className='pokecard__li--stats' key={infoStat.stat.url}>
+                            <span className='pokecard__span--label'>{infoStat.stat.name.toUpperCase()} </span>
+                            <span className={`pokecard__span--value text__${typePoke}`}>{infoStat.base_stat}</span>
                         </li>
                     ))
                 }

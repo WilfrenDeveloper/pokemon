@@ -1,0 +1,352 @@
+.pokecard__article{
+    width: 350px;
+    height: 580px;
+    border-radius: 10px;
+    font-weight: var(--card);
+}
+
+.pokecard__header{
+    height: 160px;
+    margin-bottom: 80px;
+}
+
+.pokecard__img{
+    width:220px;
+    position: relative;
+    top: 20px;
+    left: 55px;
+}
+
+.pokecard__section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pokecard__h3{
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.pokecard__ul--type{
+    display: flex;
+    gap: 6px;
+}
+
+.pokecard__p{
+    margin-bottom: 15px;
+    opacity: 0.6;
+}
+
+.pokecard__ul--stats{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.pokecard__li--stats{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+}
+
+.pokecard__span--label{
+    opacity: 0.6;
+    font-size: 12px;
+}
+
+.pokecard__span--value{
+    font-weight: 700;
+    font-size: 25px;
+}
+
+
+
+
+
+.article__normal{
+    border: solid 10px var(--b-normal);
+}
+
+.header__normal{
+    background: var(--normal);
+}
+
+.text__normal{
+    color: var(--b-normal);
+}
+
+
+
+.article__fighting{
+    border: solid 10px var(--b-fighting);
+}
+
+.header__fighting{
+    background: var(--fighting);
+}
+
+.text__fighting{
+    color: var(--b-fighting);
+}
+
+
+
+
+
+.article__flying{
+    border: solid 10px var(--b-flying);
+}
+
+.header__flying{
+    background: var(--flying);
+}
+
+.text__flying{
+    color: var(--b-flying);
+}
+
+
+
+.article__poison{
+    border: solid 10px var(--b-poison);
+}
+
+.header__poison{
+    background: var(--poison);
+}
+
+.text__poison{
+    color: var(--b-poison);
+}
+
+
+
+.article__ground{
+    border: solid 10px var(--b-ground);
+}
+
+.header__ground{
+    background: var(--ground);
+}
+
+.text__ground{
+    color: var(--b-ground);
+}
+
+
+
+.article__rock{
+    border: solid 10px var(--b-rock);
+}
+
+.header__rock{
+    background: var(--rock);
+}
+
+.text__rock{
+    color: var(--b-rock);
+}
+
+
+
+.article__bug{
+    border: solid 10px var(--b-bug);
+}
+
+.header__bug{
+    background: var(--bug);
+}
+
+.text__bug{
+    color: var(--b-bug);
+}
+
+
+
+.article__ghost{
+    border: solid 10px var(--b-ghost);
+}
+
+.header__ghost{
+    background: var(--ghost);
+}
+
+.text__ghost{
+    color: var(--b-ghost);
+}
+
+
+
+.article__steel{
+    border: solid 10px var(--b-steel);
+}
+
+.header__steel{
+    background: var(--steel);
+}
+
+.text__steel{
+    color: var(--b-steel);
+}
+
+
+
+.article__fire{
+    border: solid 10px var(--b-fire);
+}
+
+.header__fire{
+    background: var(--fire);
+}
+
+.text__fire{
+    color: var(--b-fire);
+}
+
+
+
+.article__water{
+    border: solid 10px var(--b-water);
+}
+
+.header__water{
+    background: var(--water);
+}
+
+.text__water{
+    color: var(--b-water);
+}
+
+
+
+.article__grass{
+    border: solid 10px var(--b-grass);
+}
+
+.header__grass{
+    background: var(--grass);
+}
+
+.text__grass{
+    color: var(--b-grass);
+}
+
+
+
+.article__electric{
+    border: solid 10px var(--b-electric);
+}
+
+.header__electric{
+    background: var(--electric);
+}
+
+.text__electric{
+    color: var(--b-electric);
+}
+
+
+
+.article__psychic{
+    border: solid 10px var(--b-psychic);
+}
+
+.header__psychic{
+    background: var(--psychic);
+}
+
+.text__psychic{
+    color: var(--b-psychic);
+}
+
+
+
+.article__ice{
+    border: solid 10px var(--b-ice);
+}
+
+.header__ice{
+    background: var(--ice);
+}
+
+.text__ice{
+    color: var(--b-ice);
+}
+
+
+
+.article__dragon{
+    border: solid 10px var(--b-dragon);
+}
+
+.header__dragon{
+    background: var(--dragon);
+}
+
+.text__dragon{
+    color: var(--b-dragon);
+}
+
+
+
+.article__dark{
+    border: solid 10px var(--b-dark);
+}
+
+.header__dark{
+    background: var(--dark);
+}
+
+.text__dark{
+    color: var(--b-dark);
+}
+
+
+
+.article__fairy{
+    border: solid 10px var(--b-fairy);
+}
+
+.header__fairy{
+    background: var(--fairy);
+}
+
+.text__fairy{
+    color: var(--b-fairy);
+}
+
+
+
+.article__onknown{
+    border: solid 10px var(--b-onknown);
+}
+
+.header__onknown{
+    background: var(--onknown);
+}
+
+.text__onknown{
+    color: var(--b-onknown);
+}
+
+
+
+
+
+
+
+
+.article__shadow{
+    border: solid 10px var(--b-shadow);
+}
+
+.header__shadow{
+    background: var(--shadow);
+}
+
+.text__shadow{
+    color: var(--b-shadow);
+}

@@ -1,0 +1,140 @@
+.pokeinfo__container{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    font-family: var(--card);
+}
+
+.pokeinfo__article{
+    width: 80vw;
+    position: relative;
+    top: 50px
+}
+
+.pokeinfo__figure{
+    height: 100px;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.pokeinfo__img{
+    width: 200px;
+}
+
+.pokeinfo__h2{
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pokeinfo__h2--span{
+    margin-top: 5px;
+    background-color: #fff;
+    z-index: 5;
+}
+
+.span__name{
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+
+.pokeinfo__h2::before{
+    content: " ";
+    position: absolute;
+    top: 55px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    border :1px solid rgba(0, 0, 0, 0.226);
+    z-index: 5;
+}
+
+.pokeinfo__ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    text-align: center;
+}
+
+.pokeinfo__li{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.span__lbl{
+    font-size: 12px;
+}
+
+.span__value{
+    font-weight: 500;
+}
+
+.div__type{
+    display: flex;
+    gap: 15px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.pokeinfo__div--ul{
+    display: grid;
+    grid-template-rows: 30px 22px;
+    grid-template-columns: repeat(2, auto);
+    width: 50%;
+    column-gap: 10px;
+}
+
+.pokeinfo__ul--span{
+    grid-column: 1/3;
+    font-weight: 500;
+}
+
+.type__li{
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.116);
+}
+
+.li__type{
+    color: white;
+}
+
+.pokeinfo__h3{
+    font-size: 25px;
+}
+
+.div__moves{
+    margin-top: 30px;
+}
+
+.moves__ul{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 5px;
+}
+
+.moves__li{
+    padding: 8px 20px;
+    border-radius: 25px;
+    background-color: rgb(255, 247, 223);
+}
+
+@media (max-width:350px) {
+    .pokeinfo__div--ul{
+        grid-template-rows: 30px 22px 22px;
+        grid-template-columns: auto;
+        width: 50%;
+        column-gap: 10px;
+    }
+    
+    .pokeinfo__ul--span{
+        grid-column: 1/2;
+    }
+}

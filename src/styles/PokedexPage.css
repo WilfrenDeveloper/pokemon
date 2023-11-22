@@ -1,11 +1,16 @@
 .pokedex__container{
     padding: 0 10vw;
-    margin-top: 120px;
+    margin-top: 130px;
     font-family: var(--page);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .pokedex__p{
     width: 80vw;
+    text-align: center;
 }
 
 .pokedex__span{
@@ -15,4 +20,20 @@
 
 .pokedex__form{
     display: inline-block;
+}
+
+.pokedex__container--div{
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+@media (max-width: 450px) {
+    .pokedex__container{
+        display: block;
+    }
+    .pokedex__p{
+        width: 100%;
+    }
 }

@@ -10,6 +10,69 @@
     --btn: #D93F3F;
     --select: #ED8F8F;
 
+
+    /****   types ****/
+    
+    --b-normal:  rgb(148, 84, 0);
+    --normal: linear-gradient(0, var(--b-normal), rgb(238, 135, 1));
+    
+    --b-fighting: rgb(151, 141, 85);
+    --fighting: linear-gradient(0, var(--b-fighting), rgb(216, 203, 130));
+
+    --b-flying:  rgb(75, 243, 255);
+    --flying: linear-gradient(0, var(--b-flying), rgb(167, 246, 252));
+    
+    --b-poison:  rgb(56, 0, 56);
+    --poison: linear-gradient(0, var(--b-poison), rgb(117, 0, 117));
+    
+    --b-ground:  rgb(53, 30, 0);
+    --ground: linear-gradient(0, var(--b-ground), rgb(92, 52, 0));
+    
+    --b-rock:  rgb(75, 74, 74);
+    --rock: linear-gradient(0, var(--b-rock), grey);
+
+    --b-bug:  rgb(0, 56, 0);
+    --bug: linear-gradient(0, var(--b-bug), rgb(76, 128, 76));
+
+    --b-ghost:  rgb(133, 70, 133);
+    --ghost: linear-gradient(0, var(--b-ghost), rgb(190, 125, 190));
+
+    --b-steel:  rgb(131, 131, 241);
+    --steel: linear-gradient(0, var(--b-steel), rgb(188, 188, 252));
+
+    --b-fire: rgb(255, 51, 0) ;
+    --fire: linear-gradient(0, var(--b-fire), rgb(255, 102, 0));
+
+    --b-water:  rgb(137, 187, 243);
+    --water: linear-gradient(0, var(--b-water), rgb(177, 210, 248));
+
+    --b-grass:  rgb(61, 82, 61);
+    --grass: linear-gradient(0, var(--b-grass), rgb(126, 165, 126));
+
+    --b-electric:  rgb(0, 0, 160);
+    --electric: linear-gradient(0, var(--b-electric), rgb(118, 118, 238));
+
+    --b-psychic:  rgb(172, 172, 87);
+    --psychic: linear-gradient(0, var(--b-psychic), rgb(250, 250, 199));
+
+    --b-ice:  rgb(0, 194, 136);
+    --ice: linear-gradient(0, var(--b-ice), rgb(78, 230, 184));
+
+    --b-dragon:  rgb(41, 0, 0);
+    --dragon: linear-gradient(0, var(--b-dragon), rgb(82, 23, 23));
+
+    --b-dark:  black;
+    --dark: linear-gradient(0, var(--b-dark), rgb(116, 116, 116));
+
+    --b-fairy:  rgb(255, 117, 117);
+    --fairy: linear-gradient(0, var(--b-fairy), rgb(250, 186, 186));
+
+    --b-unknown:  violet;
+    --unknown: linear-gradient(0, var(--b-unknown),  rgb(248, 193, 248));
+
+    --b-shadow: rgb(119, 0, 255) ;
+    --shadow: linear-gradient(0, var(--b-shadow), rgb(154, 71, 248));
+
 }
 
 *,
@@ -21,3 +84,10 @@
     list-style-type: none;
     font-family: inherit;
 }
+
+/**/
+body{
+    overflow-y:scroll;
+    overflow-x: hidden;
+}
+/**/

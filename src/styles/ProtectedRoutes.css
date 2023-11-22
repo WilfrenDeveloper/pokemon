@@ -5,7 +5,9 @@
     top: 0;
     left:0;
     background-color: var(--header);
+    z-index: 15;
 }
+
 .protected__figure::after{
     content: "";
     width: 100%;
@@ -40,7 +42,7 @@
 .protected__span::after{
     content: "00";
     color: var(--black) ;
-font-size: 25px;
+    font-size: 25px;
     background-color: var(--black);
     border: solid 6px black;
     border-radius: 50%;
@@ -48,4 +50,38 @@ font-size: 25px;
     position: relative;
     top: 15px;
     left: 10px;
+}
+
+@media (max-width:430px) {
+    .protected__logo{
+        margin-left: 5vw;
+    }
+
+    .protected__span{
+        width: 60px;
+        height: 60px;
+        position: fixed;
+        top: 46px;
+        right: 5vw;
+    }
+    
+    .protected__span::after{
+        font-size: 15px;
+    }
+}
+
+@media (max-width:370px) {
+    .protected__logo{
+        width: 200px;
+        margin-left: 5vw;
+        top: 30px;
+    }
+
+    .protected__figure{
+        height: 80px;
+        }
+
+    .protected__figure::after{
+        height: 30px;
+    }
 }

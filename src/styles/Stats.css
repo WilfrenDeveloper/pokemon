@@ -1,0 +1,19 @@
+.stats__div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.div__porcent{
+    background: linear-gradient(90deg, rgb(255, 213, 135), rgb(255, 166, 0));
+    height: 16px;
+    border-radius: 3px;
+}
+
+.stats__li{
+    margin: 15px 0;
+    font-weight: 500;
+}
+
+.divdiv__porcent{
+    border: 1px solid rgb(255, 255, 212);
+}
