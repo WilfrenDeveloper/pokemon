@@ -4,8 +4,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80vh;
     padding: 20px;
+    height: 80vh;
 }
 
 .home__container::after{
@@ -51,20 +51,21 @@
 }
 
 .home__logo{
-    width: 60vw;
-    min-width: 450px;
+    max-width: 90vw;
     margin-bottom: 60px;
 }
 
 .home__h2{
     font-size: 50px;
     color: var(--header);
+    text-align: center;
 }
 
 .home__p{
     margin-top: 10px;
     margin-bottom: 10px;
     font-weight: 500;
+    text-align: center;
 }
 
 form{
@@ -91,6 +92,7 @@ button{
     background-color: var(--btn);
     color: white;
     box-shadow: 0px 0px 8px -2px rgba(0, 0, 0, 0.555);
+
 }
 
 .home__btn:hover{

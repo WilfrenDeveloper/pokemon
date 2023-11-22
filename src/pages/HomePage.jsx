@@ -18,7 +18,7 @@ const HomePage = () => {
 
 
   return (
-    <div className='home__container'>
+    <section className='home__container'>
         <img className='home__logo' src="/pokedex-logo.png" alt="pokedex logo" />
         <h2 className='home__h2'>Hi Trainer!</h2>
         <p className='home__p'>To start,please give me your trainer name</p>
@@ -27,7 +27,7 @@ const HomePage = () => {
             <button className='home__btn'>Catch them all</button>
         </form>
         <figure className='home__figure'> </figure>
-    </div>
+    </section>
   )
 }
 
