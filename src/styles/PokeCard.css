@@ -8,13 +8,15 @@
 .pokecard__header{
     height: 160px;
     margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
 }
 
 .pokecard__img{
     width:220px;
+    height: 220px;
     position: relative;
     top: 20px;
-    left: 55px;
 }
 
 .pokecard__section{

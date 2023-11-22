@@ -84,10 +84,3 @@
     list-style-type: none;
     font-family: inherit;
 }
-
-/**/
-body{
-    overflow-y:scroll;
-    overflow-x: hidden;
-}
-/**/

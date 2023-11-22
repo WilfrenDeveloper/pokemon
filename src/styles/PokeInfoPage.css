@@ -1,7 +1,5 @@
 .pokeinfo__container{
-    display: flex;
-    justify-content: center;
-    width: 100vw;
+    padding: 0 10vw;
     font-family: var(--card);
 }
 
