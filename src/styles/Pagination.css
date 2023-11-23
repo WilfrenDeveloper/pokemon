@@ -1,0 +1,24 @@
+.pagination__div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding: 10px;
+    width: 100vw;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+}
+
+.pagination__input{
+    width: 70px;
+    text-align: center;
+}
+
+.pagination__button{
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
