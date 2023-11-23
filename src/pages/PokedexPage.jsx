@@ -54,6 +54,8 @@ const PokedexPage = () => {
       </form>
       <SelectType
         setSelectValue={setSelectValue}
+        forPage={forPage}
+        setForPage={setForPage}
       />
       <div className="pokedex__container--div">
         {
