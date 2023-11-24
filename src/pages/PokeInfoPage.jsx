@@ -14,7 +14,7 @@ const PokeInfoPage = () => {
   useEffect(() => {
     getPokemons()
   }, [])
-  console.log(pokemon);
+  
   return (
     <div className="pokeinfo__container">
       <article className="pokeinfo__article">
@@ -43,7 +43,7 @@ const PokeInfoPage = () => {
             <span className="pokeinfo__ul--span span__type">Type</span>
             {
               pokemon?.types.map(typ => (
-                <li className="li__type type__li" style={{backgroundColor: `var(--b-${typ.type.name})`}}>{typ.type.name}</li>
+                <li className="li__type type__li" style={{backgroundColor: `var(--b-${typ.type.name})`}} key = {typ.type.url}>{typ.type.name}</li>
               ))
             }
           </ul>
@@ -51,7 +51,7 @@ const PokeInfoPage = () => {
             <span className="pokeinfo__ul--span span__habilities">Habilities</span>
             {
               pokemon?.abilities.map(hability => (
-                <li className="li__habilities type__li">{hability.ability.name}</li>
+                <li className="li__habilities type__li" key={hability.ability.url}>{hability.ability.name}</li>
               ))
             }
           </ul>
@@ -63,7 +63,7 @@ const PokeInfoPage = () => {
             {
               pokemon?.stats.map(sta => 
                 <Stats
-                key={pokemon.id}
+                key={sta.stat.url}
                 sta = {sta} 
                 />
                 )
@@ -76,7 +76,7 @@ const PokeInfoPage = () => {
           <ul className="moves__ul">
             {
               pokemon?.moves.map(mov => (
-                <li className="moves__li">{mov.move.name}</li>
+                <li className="moves__li" key={mov.move.url}>{mov.move.name}</li>
               ))
             }
           </ul>

@@ -14,6 +14,9 @@ const ProtecetedRoutes = () => {
           <span className='protected__span'></span>
         </figure>
         <Outlet />
+        <p className='protected__copy'>
+          <i class='bx bx-copyright' ></i> Wilfren Quintero / Academlo's student
+        </p>
       </>
     )
   }

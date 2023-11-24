@@ -52,6 +52,17 @@
     left: 10px;
 }
 
+.protected__copy{
+    padding-top: 6px;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(29, 28, 28);
+    color: aliceblue;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+}
+
 @media (max-width:430px) {
     .protected__logo{
         margin-left: 5vw;
